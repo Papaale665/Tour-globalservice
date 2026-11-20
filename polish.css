@@ -1,0 +1,71 @@
+/* Finition visuelle T.G.S : identite plus affirme, mobile en priorite. */
+:root{--b:#174b9a;--g:#f5b900;--ink:#18243a;--muted:#69768b;--paper:#f4f7fc;--line:#e5eaf2}
+body{font-size:16px;background:#fff}
+.wrap{width:min(1200px,calc(100% - 48px))}
+header{height:82px;background:rgba(255,255,255,.94);box-shadow:0 5px 25px #142b4d0a}
+.brand-logo{width:54px;height:54px;border-radius:12px;box-shadow:0 4px 12px #1e4fa31a}
+nav{gap:22px;font-size:12px}
+nav>a:not(.btn){transition:color .2s}
+nav>a:not(.btn):hover{color:var(--b)}
+.btn{min-height:49px;padding:0 22px;border-radius:12px;font-size:13px}
+.gold{box-shadow:0 8px 18px #f2b01e38}
+.hero{position:relative;isolation:isolate;padding:62px 0 30px;background:radial-gradient(ellipse at 78% 35%,#e8f0ff 0,transparent 42%),linear-gradient(135deg,#fff 28%,#f8faff 100%)}
+.hero:before{content:"";position:absolute;z-index:-1;width:360px;height:360px;right:-130px;top:15px;border:1px solid #1e4fa310;border-radius:50%;box-shadow:0 0 0 36px #1e4fa306,0 0 0 74px #1e4fa303}
+.hero-grid{min-height:490px;gap:66px}
+.hero h1{max-width:660px;font-size:clamp(43px,5.5vw,70px);line-height:1.08;letter-spacing:-2.7px}
+.hero h1 em{color:var(--b)}
+.eyebrow{display:inline-flex;align-items:center;gap:9px;color:var(--b)}
+.eyebrow:before{content:"";width:22px;height:2px;background:var(--g);border-radius:2px}
+.lead{font-size:15px;max-width:560px}
+.hero-image{height:450px;margin:0 18px 0 10px;border:8px solid white;border-radius:36px 100px 36px 36px;box-shadow:0 28px 65px #15366d2b;background-position:center;background-size:cover}
+.hero-image:after{content:"";position:absolute;inset:0;border-radius:inherit;background:linear-gradient(135deg,#174b9a18,transparent 46%,#1027442e);pointer-events:none}
+.float{z-index:1;border:1px solid #edf0f5;border-radius:16px;padding:14px 17px;box-shadow:0 15px 38px #142b4d1c}
+.rating{left:-27px;top:58px}.service{right:-27px;bottom:34px}
+.trust{font-size:11px;gap:18px}
+.hero-foot{padding-top:21px;font-size:10px}
+.section{padding:100px 0}
+.heading{margin-bottom:42px}
+.heading h2,.why h2,.faq h2{letter-spacing:-1.5px}
+.tile{background:#fff;border:1px solid #e8edf5;border-radius:20px;padding:23px;min-height:210px;box-shadow:0 8px 24px #142b4d08}
+.tile:hover,.product:hover{transform:translateY(-6px);box-shadow:0 22px 44px #142b4d18}
+.tile i{background:linear-gradient(145deg,#edf3ff,#f5f8ff);border:1px solid #e3ebfb;border-radius:14px}
+.shop{background:linear-gradient(180deg,#f4f7fc,#f9fbff)}
+.filters button{padding:9px 16px;border-radius:999px;font-size:11px;transition:.2s}
+.filters button.active,.filters button:hover{box-shadow:0 5px 14px #174b9a30}
+.product{border-radius:19px;border-color:#e8edf5;box-shadow:0 8px 24px #142b4d08}
+.product-img{height:205px;background:#eef2f8;overflow:hidden}
+.product-img img{transition:transform .45s ease}
+.product:hover .product-img img{transform:scale(1.055)}
+.product-img span{border-radius:999px;padding:6px 11px;box-shadow:0 4px 12px #17253c18}
+.product-info{padding:16px}
+.product-info h3{font-size:14px;min-height:42px}
+.product-info>div b{font-size:13px}
+.product-info>div a{border-radius:9px;padding:9px 11px}
+.video-grid video{border-radius:18px;box-shadow:0 10px 25px #142b4d16}
+.why-image{box-shadow:0 20px 50px #142b4d20}
+.stamp{box-shadow:0 10px 25px #142b4d20}
+.stats b{font-size:29px}
+.steps article i{border-radius:18px;box-shadow:0 8px 20px #142b4d0c}
+.reviews article{background:#fff;border-radius:20px;box-shadow:0 8px 24px #142b4d08}
+.faq{background:linear-gradient(180deg,#f4f7fc,#f8faff)}
+.faq-list details{padding:19px 0}
+.faq-list summary{font-size:13px}
+.form{border-radius:20px;box-shadow:0 18px 45px #142b4d10}
+.form input,.form select,.form textarea{border-radius:10px;padding:12px;font-size:12px}
+.map{height:230px;border-radius:18px;box-shadow:0 12px 28px #142b4d14}
+.social a{padding:8px 14px;border-radius:999px}
+footer{background:linear-gradient(145deg,#11213a,#1b3152);padding-top:58px}
+.footer-cta{border:1px solid #ffffff16;border-radius:18px;background:#ffffff0b}
+.wa-float{right:24px;bottom:24px;padding:14px 19px;border-radius:999px;box-shadow:0 10px 30px #0c7d4d55}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,summary:focus-visible{outline:3px solid #f2b01e;outline-offset:3px}
+@media(max-width:1000px){.hero-grid{gap:38px}.hero-image{height:390px}.product-img{height:175px}}
+@media(max-width:760px){.wrap{width:calc(100% - 34px)}header{height:70px}.brand-logo{width:48px;height:48px}.hero{padding-top:42px}.hero-grid{gap:25px;min-height:auto}.hero h1{font-size:clamp(39px,10vw,54px);letter-spacing:-1.8px}.hero-image{height:360px;margin:0 8px 0 5px;border-width:6px;border-radius:28px 76px 28px 28px}.section{padding:74px 0}.tile{padding:18px 15px;min-height:200px}.product-img{height:155px}.product-info{padding:12px}.product-info h3{font-size:12px}.product-info>div b{font-size:12px}.map{height:210px}}
+@media(max-width:480px){.wrap{width:calc(100% - 28px)}.hero h1{font-size:38px}.hero-image{height:295px}.float{padding:10px 12px}.rating{left:-8px;top:30px}.service{right:-8px;bottom:20px}.trust{font-size:9px}.hero-foot{font-size:7px}.section{padding:62px 0}.tile{min-height:195px}.product-img{height:125px}.product-info>div a{font-size:8px;padding:7px}.wa-float{right:14px;bottom:14px}}
+
+
+/* Bouton WhatsApp explicite sur chaque produit */
+.product-info>div{display:flex;flex-direction:column;align-items:stretch;gap:12px}
+.product-info>div a{display:flex;align-items:center;justify-content:center;width:100%;min-height:45px;background:#128c55;color:#fff;border-radius:12px;font-size:12px;font-weight:700;box-shadow:0 7px 16px #128c552e;transition:transform .2s,background .2s,box-shadow .2s}
+.product-info>div a:before{content:'◉';font-size:17px;margin-right:8px}
+.product-info>div a:hover{background:#0d7546;color:#fff;transform:translateY(-2px);box-shadow:0 10px 20px #128c5540}
+.product-info>div b{font-size:14px}
