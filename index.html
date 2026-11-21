@@ -1,6 +1,5 @@
 ﻿<!doctype html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -123,15 +122,15 @@
                     <div class="video-grid laundry-videos"><video controls playsinline preload="none"
                             poster="https://images.unsplash.com/photo-1626806787461-102c1bfaaea1?auto=format&amp;fit=crop&amp;w=800&amp;q=75"
                             aria-label="Vid&eacute;o de machine &agrave; laver 1">
-                            <source src="assets/videos/produit-02.mp4" type="video/mp4">
+                            <source src="https://d2ol7oe51mr4n9.cloudfront.net/user_3JJvgRSl6DWa457f5IHqL6feq6E/c1fdc297-e75c-48a1-9c73-8269ff5ab68e.mp4" type="video/mp4">
                         </video><video controls playsinline preload="none"
                             poster="https://images.unsplash.com/photo-1626806787461-102c1bfaaea1?auto=format&amp;fit=crop&amp;w=800&amp;q=75"
                             aria-label="Vid&eacute;o de machine &agrave; laver 2">
-                            <source src="assets/videos/produit-03.mp4" type="video/mp4">
+                            <source src="https://d2ol7oe51mr4n9.cloudfront.net/user_3JJvgRSl6DWa457f5IHqL6feq6E/fed54e8d-6065-40e8-8506-e9a78c324d87.mp4" type="video/mp4">
                         </video><video controls playsinline preload="none"
                             poster="https://images.unsplash.com/photo-1626806787461-102c1bfaaea1?auto=format&amp;fit=crop&amp;w=800&amp;q=75"
                             aria-label="Vid&eacute;o de machine &agrave; laver 3">
-                            <source src="assets/videos/produit-04.mp4" type="video/mp4">
+                            <source src="https://d2ol7oe51mr4n9.cloudfront.net/user_3JJvgRSl6DWa457f5IHqL6feq6E/c59a7f07-3cbd-438f-940a-bcc9768bb44f.mp4" type="video/mp4">
                         </video></div>
                 </div>
                 <div class="filters" role="group" aria-label="Filtrer les produits"><button
@@ -369,6 +368,6 @@
         const track = document.querySelector("#reviews"); let idx = 0; function slide(d = 0) { let v = innerWidth < 680 ? 1 : innerWidth < 980 ? 2 : 3; idx = Math.max(0, Math.min(track.children.length - v, idx + d)); track.style.transform = "translateX(-" + idx * 100 / v + "%)" } document.querySelector("#prev").onclick = () => slide(-1); document.querySelector("#next").onclick = () => slide(1); onresize = () => slide();
         if ("IntersectionObserver" in window) { let io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add("show"); io.unobserve(e.target) } }), { threshold: .12 }); document.querySelectorAll(".reveal").forEach(x => io.observe(x)); let co = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { let x = e.target, t = +x.dataset.count, i = 0, id = setInterval(() => { i = Math.min(t, i + Math.ceil(t / 45)); x.textContent = (t > 999 ? i.toLocaleString("fr-FR") : i) + (x.dataset.tail || ""); if (i >= t) clearInterval(id) }, 25); co.unobserve(x) } })); document.querySelectorAll("[data-count]").forEach(x => co.observe(x)) } else document.querySelectorAll(".reveal").forEach(x => x.classList.add("show"));
     </script>
-</body>
+<script>(function(){const grid=document.querySelector(".video-grid.laundry-videos");if(!grid)return;const video=document.createElement("video");video.controls=true;video.playsInline=true;video.preload="none";video.poster="https://images.unsplash.com/photo-1626806787461-102c1bfaaea1?auto=format&fit=crop&w=800&q=75";video.setAttribute("aria-label","Vidéo de machine à laver 1");const source=document.createElement("source");source.src="https://d2ol7oe51mr4n9.cloudfront.net/user_3JJvgRSl6DWa457f5IHqL6feq6E/fffbc301-97e8-47a4-93be-e48b84c67eac.mp4";source.type="video/mp4";video.appendChild(source);grid.prepend(video)})();</script></body>
 
 </html>
